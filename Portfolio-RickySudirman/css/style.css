@@ -6,7 +6,9 @@ a{color:inherit}
 :focus-visible{outline:3px solid currentColor;outline-offset:3px}
 nav{position:sticky;top:0;z-index:10;background:#000;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:0 5vw;height:64px}
 nav b{font-weight:900;letter-spacing:-.02em}
-nav ul{display:flex;gap:28px;list-style:none;overflow-x:auto}
+nav b{flex-shrink:0;margin-right:24px}
+nav ul{display:flex;gap:28px;list-style:none;min-width:0;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none}
+nav ul::-webkit-scrollbar{display:none}
 nav a{text-decoration:none;font-size:15px;white-space:nowrap;padding:4px 0;border-bottom:2px solid transparent}
 nav a:hover{border-color:#fff}
 section{padding:96px 5vw}
